@@ -907,6 +907,15 @@ fieldset
     position: sticky;
 }
 
+.footer h4
+{
+    font-size: 28px;
+}
+
+.footer p 
+{
+    font-size: 20px;
+}
 
 .footer img
 {
@@ -947,6 +956,12 @@ fieldset
     margin: 0 40px;
     margin-bottom: 80px;
 }
+
+.form h2
+{
+    font-size: 28px;
+}
+
 
 }
 
@@ -1111,19 +1126,30 @@ fieldset
 
 /*FOOTER START*/
 
-    .footer img
-    {
-        height: 120px;
-        margin-top: 40px;
-    }
+.footer img
+{
+    height: 120px;
+    margin-top: 40px;
+}
 
 
 
-    .description
-    {
-        padding-top: 40px;
-        font-size: 20px;
-    }
+.description
+{
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.footer h4
+{
+    font-size: 32px;
+}
+
+.footer p 
+{
+    font-size: 24px;
+}
+
 }
 
 
