@@ -4,64 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-
+    <title>About Us</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="../css/styles.css">
 
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon/favicon.ico">
+    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 
 <body id="body__about">
 
     <header class="header-nav">
-        <div class="logo-box">
-            <img src="../imgs/Logo/ki-white-on-transparent-background.png" class="logo">
-        </div>
+        <nav class="navbar">
+            <div class="brand">
+                <img src="../imgs/logo/KI WHITE.png" class="logo" alt="logo">
+            </div>
 
-        <div class="nav">
-            <ul class="navbar">
-                <li>
-                    <a href="..//index.html">Home</a>
-                </li>
-                <li>
-                    <a href="../pages/catalog.html">Catalog</a>
-                </li>
-                <li>
-                    <a href="../pages/about.html">About Us</a>
-                </li>
-                <li>
-                    <a href="../pages/signup.html">🙍‍♂️</a>
-                </li>
-                <li>
-                    <a href="../pages/cart.html">🛒</a>
-                </li>
-            </ul>
-        </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="navbar-links">
+                <ul class="links">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/catalog.html">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="../pages/signup.html">🙍‍♂️</a>
+                    </li>
+                    <li class="cart">
+                        <a href="../pages/cart.html">
+                            <ion-icon name="basket"></ion-icon> Cart
+                            <span>0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
-
-
 
     <main class="sections">
         <section id="section-1">
 
             <div class="about-us">
-                <h2>BRAND VISION</h2>
+                <h1>BRAND VISION</h1>
 
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quaerat excepturi, repudiandae, assumenda tempora soluta quia sint velit illo aperiam beatae libero veniam consequuntur at consequatur rem dignissimos eligendi odio.</p>
 
                 <h2>IMPOSSIBLE IS NOTHING</h2>
 
-                <img src="..//imgs/about/kanye face.jpg" class="img-1">
+                <img src="..//imgs/about/Kanye.jpg" class="img-1" alt="Kanye-banner">
 
                 <p>
                     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit illum, cum blanditiis nihil a ad perspiciatis temporibus deserunt. Ab voluptatem sed iste? Quidem quam hic nisi doloribus iusto non voluptatem."
                 </p>
 
-                <img src="../imgs/about/wallpaperflare-cropped.jpg" alt="" class="img-2">
+                <img src="../imgs/about/Shoes.jpg" class="img-2" alt="Shoes-Banner">
             </div>
 
 
@@ -70,25 +79,28 @@
         </section>
     </main>
 
-
-
-
     <footer class="footer">
         <div class="logo">
-            <img src="../imgs/Logo/ki-black-on-transparent-background.png">
+            <img src="../imgs/logo/KI BLACK.png" class="logo" alt="logo">
         </div>
 
         <div class="description">
-            <h4>Contact</h4>
+            <h2>Contact</h2>
             <p><strong>Address:</strong> Calle 38 N° 317, General Pico, La Pampa</p>
             <p><strong>Hours:</strong> 10:00 AM - 6:00 PM, Mon - Sat</p>
             <p><strong>Phone:</strong> +54-2302-202307</p>
         </div>
 
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="../scripts/menu.js"></script>
+
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>
