@@ -61,38 +61,14 @@
     "footer footer"; 
 }
 
-/*HEADER NAV GENERAL*/ 
-.header-nav{
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-        .brand{
-            .logo{
-                height: 6vh;
-            }
-        }
-        .toggle-button{
-            display: flex;
-        }
-        .navbar-links{
-            display: none;
-            width: 100%;
-            .links{
-                flex-direction: column;
-                width: 100%;
-                li{
-                    text-align: center;
-                    a{
-                        padding: 0.5rem 1rem;
-                    }                
-                }
-            }
-            &.active{
-                display: flex;
-            }
-        }
-    }
+/*HEADER NAV GENERAL*/
+.nav-menu{
+    font-size: 14px;
+    gap: 10px;
+    margin-top: 20px;
 }
+
+
 
 /*SECTION 1 LOGIN-SIGNUP*/
 #section-1{
@@ -221,8 +197,7 @@
 }
 
 /*PROCESS*/
-.process-done
-{
+.process-done{
     .finished{
         h1{
             font-size: 32px;
