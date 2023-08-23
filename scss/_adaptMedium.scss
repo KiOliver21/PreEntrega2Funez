@@ -1,6 +1,8 @@
-/*480 TO 768PX*/
-@media (min-width: 480px){
+/*480 TO 768PX
+@media (min-width: 480px){*/
 
+/*0 TO 768px*/
+@media (max-width: 768px){
 /*BODYS*/
 #body__index{
     background-color: #d2d2d2;
@@ -62,15 +64,76 @@
 }
 
 /*HEADER NAV GENERAL*/
-.nav-menu{
-    font-size: 14px;
-    gap: 10px;
-    margin-top: 20px;
+.header-nav{
+    width: 100%;
+    .navbar{
+        .nav-menu{ 
+            position: absolute;
+            left: -100%;
+            top: 10vh;
+            gap: 0;
+            flex-direction: column;
+            background-color: lightslategray;
+            width: 100%;
+            text-align: center;
+            transition: 0.1s;
+            padding-bottom: 10px;
+            .nav-item{
+                margin: 0px 0;
+            }
+            &.active{
+                left: 0;
+            }
+        }
+        .hamburger{
+            display: block;
+        }
+    }
 }
 
+/*INDEX*/
 
+.banner1, .banner2{
+    margin-bottom: 200px;
+    .banner__description{
+        font-size: 1rem;
+        font-weight: 700;
+        color: #ebebeb;
+        cursor: default;
+        display: flex;
+        justify-content: center;
+        margin-top: -150px;
+    }
+    .banner__button{
+        display: flex;
+        justify-content: center;
+        .banner__button__link{
+            color: #1a1a1a;
+            font-size: 1rem;
+            font-weight: 500;
+            padding-left: 18px;
+            padding-right: 18px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border: none;
+            cursor: pointer;
+            background-color: #ffffff;
+            border-radius: 4px;
+            &:hover{
+                background-color: #ffffff83;
+                color: #000000;    
+            }
+        }
+    }
+    .banner__img{
+        display: flex;
+        .banner__img__src{
+            width: 100%;
+        }
+    }
+}
 
-/*SECTION 1 LOGIN-SIGNUP*/
+/*LOGIN-SIGNUP*/
 #section-1{
     margin: 0px;
     padding: 0px;
@@ -100,15 +163,15 @@
     .product-box{
         margin-left: 0px 0px;
         .pro{
-            width: 24%;
-            padding: 10px 6px;
+            width: 22%;
+            padding: 10px 4px;
             border-radius: 15px;
             margin: 40px 10px;
             .prod-info1{
                 h2{
                     margin: 4px;
                     padding: 0px;
-                    line-height: 100%;
+                    line-height: 10px;
                     font-size: 12px;
                 }
                 h3{

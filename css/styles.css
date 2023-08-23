@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -116,26 +118,31 @@ a {
   margin-bottom: 10vh;
   grid-area: header-nav;
   background-color: lightslategray;
+  width: 100%;
 }
 .header-nav .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 10px;
   min-height: 10vh;
+  width: 100%;
 }
 .header-nav .navbar .nav-branding {
-  margin: 0.2rem;
-}
-.header-nav .navbar .nav-branding .logo {
-  height: 8vh;
+  margin: 0px 20px;
+  color: #232222;
+  font-size: 2rem;
+  font-weight: 700;
   align-items: center;
+  font-family: Ubuntu;
 }
 .header-nav .navbar .nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  margin-right: 40px;
+  margin-bottom: 0;
 }
 .header-nav .navbar .nav-menu li {
   list-style: none;
@@ -144,19 +151,25 @@ a {
   text-decoration: none;
   color: white;
   transition: 0.2 ease;
+  font-weight: 600;
 }
 .header-nav .navbar .nav-menu li a:hover {
   color: rgb(197, 197, 197);
 }
+.header-nav .navbar .nav-menu li a ion-icon {
+  align-items: center;
+  margin-top: 6px;
+  font-size: 24px;
+}
 .header-nav .navbar .hamburger {
-  display: none;
   cursor: pointer;
+  display: none;
 }
 .header-nav .navbar .hamburger .bar {
   display: block;
   height: 3px;
   width: 25px;
-  margin: 5px auto;
+  margin: 5px 0;
   background-color: white;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -177,7 +190,7 @@ a {
 .footer {
   text-decoration: none;
   grid-area: footer;
-  background-color: #8f685c;
+  background-color: #b34229;
   position: sticky;
 }
 .footer .logo img {
@@ -241,9 +254,6 @@ a {
 #body__index #section-1 .banner1 .banner__img .banner__img__src, #body__index #section-1 .banner2 .banner__img .banner__img__src {
   width: 100%;
 }
-#body__index #section-1 .banner2 {
-  margin-bottom: 200px;
-}
 
 /*SECTION 1 ABOUT*/
 .about-us {
@@ -271,9 +281,11 @@ a {
 }
 .form-box .form {
   background-color: #ffffff;
-  margin-bottom: 80px;
+  margin-top: 90px;
+  margin-bottom: 90px;
   padding: 80px 80px;
   border-radius: 10px;
+  width: 600px;
 }
 .form-box .form input {
   height: 4vh;
@@ -327,7 +339,7 @@ a {
 /*SECTION 1 CATALOG*/
 #product {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 #product .product-box {
   padding: 0px;
@@ -395,9 +407,8 @@ a {
   color: #ffffff;
   border-color: #fc7171;
 }
-#pages .pages-nav .pagination .page-item .active {
+#pages .pages-nav .pagination .page-item #active {
   background-color: #fc7171;
-  color: #ffffff;
   border-color: #fc7171;
 }
 
@@ -406,7 +417,7 @@ a {
   background-color: #ffffff;
   border: none;
   border-radius: 10px;
-  height: 100%;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   margin-top: 80px;
@@ -521,8 +532,7 @@ a {
   max-width: 850px;
   justify-content: space-around;
   margin: 0 auto;
-  margin-top: 50px;
-  padding-bottom: 100px;
+  margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
@@ -705,17 +715,53 @@ a {
     grid-template-rows: 0.2fr 3fr 1fr;
     grid-template-areas: "header-nav header-nav" "sections sections" "footer footer";
   }
-  /*HEADER NAV GENERAL*/
-  .hamburger {
-    display: block;
+  /*INDEX*/
+  .banner1, .banner2 {
+    margin-bottom: 200px;
+  }
+  .banner1 .banner__description, .banner2 .banner__description {
+    font-size: 0.2rem;
+    font-weight: 700;
+    color: #ebebeb;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+  }
+  .banner1 .banner__button, .banner2 .banner__button {
+    display: flex;
+    justify-content: center;
+  }
+  .banner1 .banner__button .banner__button__link, .banner2 .banner__button .banner__button__link {
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  .banner1 .banner__button .banner__button__link:hover, .banner2 .banner__button .banner__button__link:hover {
+    background-color: rgba(255, 255, 255, 0.5137254902);
+    color: #000000;
+  }
+  .banner1 .banner__img, .banner2 .banner__img {
+    display: flex;
+  }
+  .banner1 .banner__img .banner__img__src, .banner2 .banner__img .banner__img__src {
+    width: 100%;
   }
   /*CATALOG*/
   #product .product-box {
     margin-left: 0px 0px;
   }
   #product .product-box .pro {
-    width: 25%;
-    padding: 10px 6px;
+    width: 100%;
+    padding: 10px 10px;
     border: 1px;
     border-color: #e3e6f3;
     border-style: solid;
@@ -887,8 +933,10 @@ a {
     line-height: 20px;
   }
 }
-/*480 TO 768PX*/
-@media (min-width: 480px) {
+/*480 TO 768PX
+@media (min-width: 480px){*/
+/*0 TO 768px*/
+@media (max-width: 768px) {
   /*BODYS*/
   #body__index {
     background-color: #d2d2d2;
@@ -931,12 +979,71 @@ a {
     grid-template-areas: "header-nav header-nav" "sections sections" "footer footer";
   }
   /*HEADER NAV GENERAL*/
-  .nav-menu {
-    font-size: 14px;
-    gap: 10px;
-    margin-top: 20px;
+  .header-nav {
+    width: 100%;
   }
-  /*SECTION 1 LOGIN-SIGNUP*/
+  .header-nav .navbar .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 10vh;
+    gap: 0;
+    flex-direction: column;
+    background-color: lightslategray;
+    width: 100%;
+    text-align: center;
+    transition: 0.1s;
+    padding-bottom: 10px;
+  }
+  .header-nav .navbar .nav-menu .nav-item {
+    margin: 0px 0;
+  }
+  .header-nav .navbar .nav-menu.active {
+    left: 0;
+  }
+  .header-nav .navbar .hamburger {
+    display: block;
+  }
+  /*INDEX*/
+  .banner1, .banner2 {
+    margin-bottom: 200px;
+  }
+  .banner1 .banner__description, .banner2 .banner__description {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ebebeb;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+  }
+  .banner1 .banner__button, .banner2 .banner__button {
+    display: flex;
+    justify-content: center;
+  }
+  .banner1 .banner__button .banner__button__link, .banner2 .banner__button .banner__button__link {
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  .banner1 .banner__button .banner__button__link:hover, .banner2 .banner__button .banner__button__link:hover {
+    background-color: rgba(255, 255, 255, 0.5137254902);
+    color: #000000;
+  }
+  .banner1 .banner__img, .banner2 .banner__img {
+    display: flex;
+  }
+  .banner1 .banner__img .banner__img__src, .banner2 .banner__img .banner__img__src {
+    width: 100%;
+  }
+  /*LOGIN-SIGNUP*/
   #section-1 {
     margin: 0px;
     padding: 0px;
@@ -965,15 +1072,15 @@ a {
     margin-left: 0px 0px;
   }
   #product .product-box .pro {
-    width: 24%;
-    padding: 10px 6px;
+    width: 22%;
+    padding: 10px 4px;
     border-radius: 15px;
     margin: 40px 10px;
   }
   #product .product-box .pro .prod-info1 h2 {
     margin: 4px;
     padding: 0px;
-    line-height: 100%;
+    line-height: 10px;
     font-size: 12px;
   }
   #product .product-box .pro .prod-info1 h3 {
@@ -1133,10 +1240,6 @@ a {
   }
   .footer .description h4 {
     margin-bottom: 20px;
-  }
-  /*HEADER NAV GENERAL*/
-  .hamburger {
-    display: block;
   }
   /*SECTION 1 LOGIN-SIGNUP*/
   #section-1 {

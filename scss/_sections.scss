@@ -4,8 +4,7 @@ $font2:rgb(255, 255, 255);
 
 /*SECTION 1 INDEX*/
 
-#body__index #section-1
-{
+#body__index #section-1{
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -54,9 +53,6 @@ $font2:rgb(255, 255, 255);
             }
         }
     }
-    .banner2{
-        margin-bottom: 200px;
-    }
 }
 
 /*SECTION 1 ABOUT*/
@@ -85,9 +81,11 @@ $font2:rgb(255, 255, 255);
     justify-content: center;
     .form{
         background-color: #ffffff;
-        margin-bottom: 80px;
+        margin-top: 90px;
+        margin-bottom: 90px;
         padding: 80px 80px;
         border-radius: 10px;
+        width: 600px;
         input{
             height: 4vh;
             border-radius: 10px;
@@ -136,14 +134,13 @@ $font2:rgb(255, 255, 255);
             font-size: 18px;
             margin-left: 5px;
         }
-
     }
 }
 
 /*SECTION 1 CATALOG*/
 #product{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     .product-box{
         padding: 0px;
         margin-left: 0px 5px;
@@ -214,17 +211,14 @@ $font2:rgb(255, 255, 255);
                     color: #ffffff;
                     border-color: #fc7171;
                 }
-                .active{
-                    background-color: #fc7171;
-                    color: #ffffff;
-                    border-color: #fc7171;
+                #active{
+                        background-color: #fc7171;
+                        border-color: #fc7171;
                 }
             }
         }
     }
 }
-
-
 
 /*SECTION 1 BILLING*/
 #cart-box{
@@ -232,6 +226,7 @@ $font2:rgb(255, 255, 255);
     border: none;
     border-radius: 10px;
     height: 100%;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     margin-top: 80px;
@@ -349,8 +344,7 @@ $font2:rgb(255, 255, 255);
     max-width: 850px;
     justify-content: space-around;
     margin: 0 auto;
-    margin-top: 50px;
-    padding-bottom: 100px;
+    margin-top: 90px;
     display: flex;
     flex-wrap: wrap;
     background-color: #ffffff;
