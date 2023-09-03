@@ -1,5 +1,4 @@
 /*0 TO 480PX*/
-
 @media (max-width: 480px){
 /*BODYS*/
 #body__index{
@@ -13,6 +12,7 @@
     "sections sections"
     "footer footer"; 
 }
+
 #body__about{
     background-color: #d2d2d2;
     display: grid; 
@@ -62,7 +62,6 @@
 }
 
 /*INDEX*/
-
 .banner1, .banner2{
     margin-bottom: 200px;
     .banner__description{

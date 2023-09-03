@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +65,7 @@ a {
   text-decoration: none !important;
 }
 
+/*VARIABLES*/
 /*BODYS*/
 #body__index {
   background-color: #d2d2d2;
@@ -130,11 +129,10 @@ a {
 }
 .header-nav .navbar .nav-branding {
   margin: 0px 20px;
-  color: #232222;
-  font-size: 2rem;
-  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 1.6rem;
+  font-weight: 500;
   align-items: center;
-  font-family: Ubuntu;
 }
 .header-nav .navbar .nav-menu {
   display: flex;
@@ -149,9 +147,8 @@ a {
 }
 .header-nav .navbar .nav-menu li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   transition: 0.2 ease;
-  font-weight: 600;
 }
 .header-nav .navbar .nav-menu li a:hover {
   color: rgb(197, 197, 197);
@@ -190,7 +187,7 @@ a {
 .footer {
   text-decoration: none;
   grid-area: footer;
-  background-color: #b34229;
+  background-color: #8f685c;
   position: sticky;
 }
 .footer .logo img {
@@ -241,12 +238,12 @@ a {
   padding-bottom: 8px;
   border: none;
   cursor: pointer;
-  background-color: #ffffff;
+  background: #ffffff;
   border-radius: 4px;
 }
 #body__index #section-1 .banner1 .banner__button .banner__button__link:hover, #body__index #section-1 .banner2 .banner__button .banner__button__link:hover {
   background-color: rgba(255, 255, 255, 0.5137254902);
-  color: #000000;
+  color: #1a1a1a;
 }
 #body__index #section-1 .banner1 .banner__img, #body__index #section-1 .banner2 .banner__img {
   display: flex;
@@ -280,7 +277,7 @@ a {
   justify-content: center;
 }
 .form-box .form {
-  background-color: #ffffff;
+  background: #ffffff;
   margin-top: 90px;
   margin-bottom: 90px;
   padding: 80px 80px;
@@ -299,8 +296,8 @@ a {
 .form-box .form .form-button {
   margin-top: 50px;
   width: 100%;
-  background-color: #ffffff;
-  color: #080710;
+  background: #ffffff;
+  color: #1a1a1a;
   padding: 15px 0;
   font-size: 18px;
   font-weight: 600;
@@ -357,7 +354,7 @@ a {
   transition: 0.15s;
   display: inline-block;
   justify-content: space-around;
-  background-color: #ffffff;
+  background: #ffffff;
 }
 #product .product-box .pro:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
@@ -377,7 +374,7 @@ a {
   background-color: #fc7171;
   padding: 10px 10px;
   border-radius: 50%;
-  color: #000000;
+  color: #1a1a1a;
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -395,28 +392,26 @@ a {
   margin-bottom: 40px;
 }
 #pages .pages-nav .pagination .page-item a:hover {
-  background-color: #fc7171;
+  background: #fc7171;
   color: #ffffff;
-  border-color: #fc7171;
 }
 #pages .pages-nav .pagination .page-item .page-link {
-  color: #000000;
+  color: #1a1a1a;
 }
 #pages .pages-nav .pagination .page-item a:focus {
-  background-color: #fc7171;
+  background: #fc7171;
   color: #ffffff;
-  border-color: #fc7171;
 }
 #pages .pages-nav .pagination .page-item #active {
-  background-color: #fc7171;
-  border-color: #fc7171;
+  background: #fc7171;
 }
 
 /*SECTION 1 BILLING*/
 #cart-box {
-  background-color: #ffffff;
+  background: #ffffff;
   border: none;
   border-radius: 10px;
+  height: 100%;
   height: 1000px;
   display: flex;
   flex-direction: column;
@@ -535,7 +530,7 @@ a {
   margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
-  background-color: #ffffff;
+  background: #ffffff;
   padding: 60px 60px;
   margin-bottom: 240px;
   border-radius: 10px;
@@ -627,7 +622,7 @@ a {
   padding: 10px 10px;
   border-radius: 10px;
   background-color: #f5b5b5;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 500;
 }
@@ -638,7 +633,7 @@ a {
 
 /*SECTION 1 PROCESS*/
 .process-done {
-  background-color: #ffffff;
+  background: #ffffff;
   justify-content: center;
   padding: 200px 100px;
   margin-bottom: 200px;
@@ -662,7 +657,7 @@ a {
 .process-done .submit .submit-button {
   background-color: #ffbaba;
   padding: 10px 20px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 500;
   border-radius: 10px;
@@ -933,8 +928,6 @@ a {
     line-height: 20px;
   }
 }
-/*480 TO 768PX
-@media (min-width: 480px){*/
 /*0 TO 768px*/
 @media (max-width: 768px) {
   /*BODYS*/

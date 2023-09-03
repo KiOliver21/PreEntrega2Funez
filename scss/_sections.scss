@@ -1,9 +1,4 @@
-$bg1:#fc7171;
-$font1:#1a1a1a;
-$font2:rgb(255, 255, 255);
-
 /*SECTION 1 INDEX*/
-
 #body__index #section-1{
     display: flex;
     flex-direction: column;
@@ -29,7 +24,7 @@ $font2:rgb(255, 255, 255);
             display: flex;
             justify-content: center;
             .banner__button__link{
-                color: #1a1a1a;
+                color: $font1;
                 font-size: 1.2rem;
                 font-weight: 500;
                 padding-left: 34px;
@@ -38,11 +33,11 @@ $font2:rgb(255, 255, 255);
                 padding-bottom: 8px;
                 border: none;
                 cursor: pointer;
-                background-color: #ffffff;
+                background: $bg2;
                 border-radius: 4px;
                 &:hover{
                     background-color: #ffffff83;
-                    color: #000000;    
+                    color: $font1;    
                 }
             }
         }
@@ -56,8 +51,7 @@ $font2:rgb(255, 255, 255);
 }
 
 /*SECTION 1 ABOUT*/
-.about-us
-{
+.about-us{
     display: flex;
     flex-direction: column;
     .img-1{
@@ -80,7 +74,7 @@ $font2:rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     .form{
-        background-color: #ffffff;
+        background: $bg2;
         margin-top: 90px;
         margin-bottom: 90px;
         padding: 80px 80px;
@@ -98,8 +92,8 @@ $font2:rgb(255, 255, 255);
         .form-button{
             margin-top: 50px;
             width: 100%;
-            background-color: #ffffff;
-            color: #080710;
+            background: $bg2;
+            color: $font1;
             padding: 15px 0;
             font-size: 18px;
             font-weight: 600;
@@ -108,7 +102,7 @@ $font2:rgb(255, 255, 255);
             border: 1px solid black;
             &:hover{
                 background-color: #717171;
-                color: #ffffff;
+                color: $bg2;
             }
         }
         p{
@@ -156,7 +150,7 @@ $font2:rgb(255, 255, 255);
             transition: 0.15s;
             display: inline-block;
             justify-content: space-around;
-            background-color: #ffffff;
+            background: $bg2;
             &:hover{
                 box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);     
             }
@@ -176,7 +170,7 @@ $font2:rgb(255, 255, 255);
                     background-color: $bg1;
                     padding: 10px 10px;
                     border-radius: 50%;
-                    color: #000000;
+                    color: $font1;
                     font-size: 20px;
                     font-weight: 400;
                     margin-bottom: 10px;
@@ -196,24 +190,21 @@ $font2:rgb(255, 255, 255);
         .pagination{
             margin-top: 40px;
             margin-bottom: 40px;
-           .page-item{
+            .page-item{
                 a:hover{
-                    background-color: #fc7171;
+                    background: $bg1;
                     color: #ffffff;
-                    border-color: #fc7171;
                 }
                 .page-link
                 {
-                    color: #000000;
+                    color: $font1;
                 }
                 a:focus{
-                    background-color: #fc7171;
+                    background: $bg1;
                     color: #ffffff;
-                    border-color: #fc7171;
                 }
                 #active{
-                        background-color: #fc7171;
-                        border-color: #fc7171;
+                        background: $bg1;
                 }
             }
         }
@@ -222,7 +213,7 @@ $font2:rgb(255, 255, 255);
 
 /*SECTION 1 BILLING*/
 #cart-box{
-    background-color: #ffffff;
+    background: $bg2;
     border: none;
     border-radius: 10px;
     height: 100%;
@@ -243,7 +234,7 @@ $font2:rgb(255, 255, 255);
             cursor: pointer;
             color: gray;
             .black{
-                color: #1a1a1a;
+                color: $font1;
                 font-weight: 600;
                 cursor: pointer;
             }
@@ -254,7 +245,7 @@ $font2:rgb(255, 255, 255);
         flex-direction: column;
         p{
             font-size: 28px;
-            color: #1a1a1a;
+            color: $font1;
             margin-top: 10px;
             margin-left: 10px;
         }
@@ -309,7 +300,7 @@ $font2:rgb(255, 255, 255);
                     justify-content: center;
                     .submit-button{
                         background-color: #ffa2a2;
-                        color: rgb(255, 255, 255);
+                        color: $font2;
                         border-radius: 8px;
                         border: none;
                         white-space: nowrap;
@@ -347,7 +338,7 @@ $font2:rgb(255, 255, 255);
     margin-top: 90px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffffff;
+    background: $bg2;
     padding: 60px 60px;
     margin-bottom: 240px;
     border-radius: 10px;
@@ -367,7 +358,7 @@ $font2:rgb(255, 255, 255);
             cursor: pointer;
             color: gray;
             .black{
-                color: #1a1a1a;
+                color: $font1;
                 font-weight: 600;
                 cursor: pointer;
             }
@@ -438,7 +429,7 @@ $font2:rgb(255, 255, 255);
         padding: 10px 10px;
         border-radius: 10px;
         background-color: #f5b5b5;
-        color: #ffffff;
+        color: $font2;
         font-size: 20px;
         font-weight: 500;
         &:hover
@@ -451,7 +442,7 @@ $font2:rgb(255, 255, 255);
 
 /*SECTION 1 PROCESS*/
 .process-done{
-    background-color: #ffffff;
+    background: $bg2;
     justify-content: center;
     padding: 200px 100px;
     margin-bottom: 200px;
@@ -466,16 +457,14 @@ $font2:rgb(255, 255, 255);
             font-size: 32px;
         }
     }
-    .submit
-    {
+    .submit{
         text-align: center;
         display: flex;
         justify-content: center;
-        .submit-button
-        {
+        .submit-button{
             background-color: #ffbaba;
             padding: 10px 20px;
-            color: #ffffff;
+            color: $font2;
             font-size: 20px;
             font-weight: 500;
             border-radius: 10px;
